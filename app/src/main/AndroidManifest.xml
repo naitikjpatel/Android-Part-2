@@ -13,6 +13,21 @@
         android:theme="@style/Theme.AndroidRevisionTwo"
         tools:targetApi="31">
         <activity
+            android:name=".SharePreferanceHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".SharePreferanceLogin"
+            android:exported="false" />
+        <activity
+            android:name=".SharePreferanceRegister"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Advance_Control"
             android:exported="true">
             <intent-filter>
